@@ -22,6 +22,8 @@ public class Program {
 
     // ArrayList example
     static void arrayListExample() {
+        System.out.println("______________________________");
+        System.out.println("arrayListExample");
         ArrayList<Integer> integerArrayList = new ArrayList<>();
         for(int i = 0; i < 10; i++) {
             integerArrayList.add(i + 1);
@@ -36,6 +38,8 @@ public class Program {
     }
 
     static void linkedListExample() {
+        System.out.println("______________________________");
+        System.out.println("linkedListExample");
         LinkedList<String> linkedList = new LinkedList<>();
         linkedList.add("str");
 
@@ -44,6 +48,9 @@ public class Program {
     }
 
     static void stackAndQueueExample() {
+        System.out.println("______________________________");
+        System.out.println("stackAndQueueExample");
+        System.out.println("stack");
         Stack<String> stringStack = new Stack<>();
         stringStack.push("1");
         stringStack.push("2");
@@ -52,6 +59,8 @@ public class Program {
         System.out.println(stringStack.pop());
         System.out.println(stringStack.pop());
 
+
+        System.out.println("queue");
         PriorityQueue<String> queue = new PriorityQueue<>();
         queue.add("1");
         queue.add("2");
@@ -62,6 +71,8 @@ public class Program {
     }
 
     static void setExample() {
+        System.out.println("______________________________");
+        System.out.println("setExample");
         HashSet<Integer> set = new HashSet<>();
         set.add(10);
         set.add(1);
@@ -98,10 +109,10 @@ public class Program {
 
 
         // коллекции
-        // arrayListExample();
-        // linkedListExample();
-        // stackAndQueueExample();
-        // setExample();
+        arrayListExample();
+        linkedListExample();
+        stackAndQueueExample();
+        setExample();
         mapExample();
     }
 }
